@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "网页内容保存为Word",
+  "version": "1.0",
+  "description": "将网页选中内容（包含图片和表格）保存为Word文档",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "保存为Word"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+} 
